@@ -1,0 +1,6 @@
+# cmake
+build
+CMakeUserPresets.json
+
+# vscode
+.vscode/settings.json

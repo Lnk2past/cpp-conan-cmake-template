@@ -1,0 +1,32 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "Conan: install",
+			"command": "conan install . --build=missing -pr=default && conan install . --build=missing -pr=debug",
+			"group": {
+				"kind": "build"
+			},
+			"problemMatcher": []
+		},
+		{
+			"type": "shell",
+			"label": "Conan: build",
+			"command": "conan build . -nr -pr=default",
+			"group": {
+				"kind": "build"
+			},
+			"problemMatcher": []
+		},
+		{
+			"type": "shell",
+			"label": "Debug Conan: build",
+			"command": "conan build . -nr -pr=debug",
+			"group": {
+				"kind": "build"
+			},
+			"problemMatcher": []
+		}
+	]
+}
